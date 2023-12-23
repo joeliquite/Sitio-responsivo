@@ -105,30 +105,34 @@
             <form action="" class="formulario">
                 <fieldset>
                     <legend>Contactanos llenando todos los campos</legend>
-    
-                    <div class="">
-                        <label for="nombre">Nombre</label>
-                    <input type="text" placeholder="Nombre">
-                    </div>
-    
                     
-                    <div>
-                        <label for="telefono">Teléfono</label>
-                    <input type="text" placeholder="Teléfono">
+                        <!-- Inicio del contenedor que posee todos los campos del formulario -->
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label for="nombre">Nombre</label>
+                        <input class="input-text" type="text" placeholder="Nombre">
+                        </div>
+        
+                        
+                        <div class="campo">
+                            <label for="telefono">Teléfono</label>
+                        <input class="input-text" type="text" placeholder="Teléfono">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="correo">E-mail</label>
+                        <input class="input-text" type="email" placeholder="E-mail">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="mensaje">Mensaje</label>
+                        <textarea  class="input-text" name="mensaje" ></textarea>
+                        </div>
                     </div>
+                    <!-- Fin del contenedor que contiene todos los campos -->
     
-                    <div>
-                        <label for="correo">E-mail</label>
-                    <input type="email" placeholder="E-mail">
-                    </div>
-    
-                    <div>
-                        <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" ></textarea>
-                    </div>
-    
-                    <div>
-                        <input type="submit" value="Enviar">
+                    <div class="enviar  alinear-derecha flex">
+                        <input class="boton w-small-100" type="submit" value="Enviar" >
                     </div>
                 </fieldset>
     
@@ -140,7 +144,7 @@
     
 
     
-    <footer>
+    <footer class="footer">
         <p>todos los derechos reservados. Joel Iquite </p>
 
     </footer>
